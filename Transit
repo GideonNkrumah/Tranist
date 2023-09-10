@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML CSS JS</title>
+    <style>
+        /* Update the CSS for right-aligned image */
+        .header-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            padding-top: 10px;
+            padding-right: 3px;
+            padding-bottom: 5px;
+            padding-left: 0px;
+            background-color: black;
+            color: white;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        #tDot {
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        body {
+            background-color: black;
+            font-family: 'Nimbus Sans L Bold', sans-serif;
+        }
+        
+        .title {
+            font-size: 26px;
+            font-weight: bold;
+            padding-left: 20px;
+        }
+        
+        .image-container {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+        
+        /* Apply styles for the grid */
+        .grid-container {
+            display: grid;
+            grid-template-rows: 0.3fr 1.1fr 0.25fr;
+            background-color: #681cac;
+            border: 1px solid white;
+            border-radius: 20px;
+            height: 46.8vh;
+        }
+        
+        #usrImage {
+            max-width: 100%;
+            height: 180px;
+        }
+        
+        /* Apply styles for the grid items */
+        .grid-item {
+            display: flex;
+            align-items: center;
+            color: white;
+            padding-bottom: 3px;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 4px;
+        }
+        
+        #datetime {
+            font-size: 14px;
+            padding-left: 20px;
+        }
+        
+        .grid-items {
+            display: flex;
+            color: white;
+        }
+        
+        /* Style the second row differently */
+        .large-row {
+            display: grid;
+            grid-template-columns: 61% 1fr;
+            background-color: #e8e8e8;
+            padding: 1px;
+        }
+        
+        /* Apply styles for columns within the second row */
+        .left-column {
+            display: flex;
+            justify-content: left;
+            align-items: left;
+            padding-left: 10px;
+            padding-top: 10px;
+            color: black;
+        }
+        
+        .lname {
+            padding-top: 20px;
+            font-size: 14px;
+        }
+        
+        .right-column {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .place3 {
+            background-color: purple;
+            color: white;
+            width: 122px;
+            background-color: #681cac;
+            padding-left: 5px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            font-size: 14px;
+            margin-bottom: 1;
+        }
+        
+        .grid-item {
+            display: flex;
+            align-items: center;
+        }
+        
+        .text {
+            flex: 1;
+            text-align: left;
+        }
+        
+        #transit {
+            width: 200px;
+        }
+        
+        #tcsa {
+            max-width: 100%;
+            height: auto;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            flex: 0;
+        }
+        
+        .gradient-rectangle {
+            width: 40px;
+            height: 29px;
+            background: linear-gradient(90deg, yellow, orange, red, purple, blue, lightblue, lightgreen, yellow);
+            background-size: 1400% 100%;
+            border-radius: 14px;
+            animation: gradientAnimation 4s linear infinite alternate;
+        }
+        
+        @keyframes gradientAnimation {
+            0% {
+                background-position: 0% 50%;
+            }
+            100% {
+                background-position: 100% 50%;
+            }
+        }
+        
+        #dots {
+            align-items: right;
+            padding-top: 40px;
+            padding-right: 20px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <header class="header-grid">
+        <div class="title">ID Cards</div>
+        <div class="image-container">
+            <img src="https://media.discordapp.net/attachments/1066153339307438130/1146901464271298630/image0.jpg?width=92&height=42" alt="Image">
+        </div>
+    </header>
+    
+    <div id="tDot">
+        <img src="https://cdn.discordapp.com/attachments/1066153339307438130/1149414722144317440/image.png" alt="Image">
+    </div>
+    
+    <div class="grid-container">
+        <div class="grid-item" id="container">
+            <div class="text"><img id="transit" src="https://media.discordapp.net/attachments/1066153339307438130/1150116881726984304/image.png" alt="Avatar"></div>
+            <img id="tcsa" src="https://www.trentu.ca/athletics/sites/trentu.ca.athletics/files/styles/square/public/images/promos/5vSHLBbZ_400x400.jpg?itok=q3kmFepZ" alt="Avatar">
+        </div>
+        
+        <div class="grid-items large-row">
+            <div class="left-column">
+                <div class="place1"><b>Gideon</b><p class="lname">Nkrumah</p></div>
+            </div>
+            <div class="right-column">
+                <img id="usrImage" src="https://media.discordapp.net/attachments/1066153339307438130/1149780231025086585/IMG_6223.jpg" alt="Image">
+                <div class="place3">
+                    <b>Expiration</b><br>Sep 01, 2024
+                </div>
+            </div>
+        </div>
+        
+        <div class="grid-item">
+            <div class="gradient-rectangle"></div><b>
+            <div id="datetime">
+                <!-- Time will be displayed here -->
+            </div></b>
+        </div>
+    </div>
+    <div id="dots">
+        <img src="https://media.discordapp.net/attachments/1066153339307438130/1150278252766707792/IMG_6459.jpg?width=42&height=42" alt="Image">
+    </div>
+
+    <script>
+        function updateDateTime() {
+            const dateTimeElement = document.getElementById('datetime');
+            const now = new Date();
+
+            // Format date and time manually
+            const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+            const formattedDateTime = `${months[now.getMonth()]} ${now.getDate()}, ${now.getFullYear()} ${now.toLocaleTimeString()}`;
+
+            dateTimeElement.textContent = formattedDateTime;
+        }
+
+        // Update the date and time every second
+        setInterval(updateDateTime, 1000);
+
+        // Initial call to display date and time
+        updateDateTime();
+    </script>
+</body>
+</html>
