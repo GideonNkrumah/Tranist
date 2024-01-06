@@ -132,24 +132,25 @@
             border: 4px solid white;
             margin: 20px auto;
             position: absolute;
-            top: 19%;
+            top: 31%;
             left: 46.8%;
         }
         /* Marquee styles */
 .marquee {
   --gap: 1rem;
   position: relative;
-  font-size: 25;
+  font-size: 1;
   font-weight: bold;
   white-space: pre;
   display: flex;
   overflow: hidden;
+  
   user-select: none;
   gap: var(--gap);
  
 }
-.currentDate{
-    font-size: 20;
+#currentDate{
+    font-size: 25;
 }
 
 .marquee__content {
@@ -158,6 +159,7 @@
   justify-content: space-around;
   gap: var(--gap);
   min-width: 100%;
+  font-size: 1;
   animation: scroll 25s linear infinite;
 }
 
