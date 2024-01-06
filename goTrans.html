@@ -26,12 +26,13 @@
         header {
             text-align: center;
             padding: 0px;
-            margin-top: 20px;
+            margin-top: 50px;
         }
 
         #logo {
             max-width: 100%;
             height: auto;
+            padding-left: 20px;
         }
 
         #movingText {
@@ -52,7 +53,7 @@
 
         section {
             background-color: #fff;
-            padding: 20px;
+            
             color: black;
             border-top: 5px solid red;
             border-bottom: 5px solid red;
@@ -138,7 +139,7 @@
 .marquee {
   --gap: 1rem;
   position: relative;
-  font-size: 21;
+  font-size: 25;
   font-weight: bold;
   white-space: pre;
   display: flex;
@@ -146,6 +147,9 @@
   user-select: none;
   gap: var(--gap);
  
+}
+.currentDate{
+    font-size: 20;
 }
 
 .marquee__content {
@@ -170,7 +174,7 @@
 <body>
 
     <header>
-        <img id="logo" src="https://media.discordapp.net/attachments/1066153339307438130/1192994267409428550/go2.png?ex=65ab197e&is=6598a47e&hm=404017bb82756a2d2dd709127b3e3be2db188436dc192073df791a6556c9ac76&=&format=webp&quality=lossless&width=83&height=47" alt="Go Transit Logo">
+        <img id="logo" src="https://media.discordapp.net/attachments/1066153339307438130/1192994267409428550/go2.png?ex=65ab197e&is=6598a47e&hm=404017bb82756a2d2dd709127b3e3be2db188436dc192073df791a6556c9ac76&=&format=webp&quality=lossless&width=104&height=59" alt="Go Transit Logo">
         <div class="marquee">
             <ul class="marquee__content">
               <li>                        •                        GO TRANSIT                        </li>
@@ -207,7 +211,7 @@
         </div>
        
         <div id="currentTime">
-            <p>Current Time</p>
+            <p>CURRENT TIME:</p>
             <div id="currentDate"></div>
         </div>
     </section>
